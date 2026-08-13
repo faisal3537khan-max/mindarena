@@ -1,0 +1,7 @@
+arena.db
+**/build/
+CMakeFiles/
+CMakeCache.txt
+*.obj
+*.exe
+*.pdb

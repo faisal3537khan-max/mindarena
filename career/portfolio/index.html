@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Muhammad Faisal Khan — 3rd-year CS student at Air University, Lahore. Flutter, Python, C++, SQL, Cisco lab work." />
+    <title>Muhammad Faisal Khan — Computer Science Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#work">Skip to work</a>
+    <header class="nav">
+      <a class="mark" href="#top">MFK</a>
+      <nav aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="kicker">CS student · Air University · Lahore · Open to internships worldwide</p>
+        <h1>Muhammad Faisal Khan</h1>
+        <p class="lede">
+          3rd-year Computer Science undergraduate. I ship Flutter products with the same rigor
+          interviews demand: Python and SQL for the data, C++ for the structures underneath,
+          Cisco when the path actually crosses a network.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#work">View case studies</a>
+          <a class="btn" href="mailto:faisal3537khan@gmail.com">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/muhammad-faisal-khan-swe" rel="noopener">LinkedIn</a>
+        </div>
+        <dl class="stats">
+          <div>
+            <dt>Flagship product</dt>
+            <dd>MindArena</dd>
+          </div>
+          <div>
+            <dt>Arenas in the app</dt>
+            <dd>10</dd>
+          </div>
+          <div>
+            <dt>Proof projects</dt>
+            <dd>5</dd>
+          </div>
+          <div>
+            <dt>Target</dt>
+            <dd>Internships / junior SWE</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="work" class="work">
+        <header class="section-head">
+          <h2>Selected work</h2>
+          <p>Five projects. Depth over a grocery list of tutorials.</p>
+        </header>
+
+        <article class="case featured" id="mindarena">
+          <p class="tag">Flutter · Dart · Product</p>
+          <h3>MindArena</h3>
+          <p class="summary">
+            A competitive mini-game platform: ten arenas, rush and duel modes, seasons, missions,
+            a shop, avatars, and country/university leaderboards. Built as a finished product loop,
+            not a widget catalog.
+          </p>
+          <ul>
+            <li>Provider + a single GameStore for profile, economy, audio, and match history.</li>
+            <li>Local persistence (JSON snapshots) for accounts, pipeline drafts, and season state.</li>
+            <li>Accessibility: reduce-motion, color-blind mode, graphics quality tiers.</li>
+          </ul>
+          <p class="proof">Proof: <code>lib/services/game_store.dart</code> · screens for every mode.</p>
+        </article>
+
+        <div class="grid">
+          <article class="case" id="algoforge">
+            <p class="tag">C++17 · DSA</p>
+            <h3>AlgoForge</h3>
+            <p>
+              Header-only library: AVL, LRU (O(1)), union-find, Dijkstra/A*, Kahn topological sort,
+              merge sort. Tests plus a benchmark harness.
+            </p>
+            <p class="proof">Proof: <code>career/projects/algoforge</code></p>
+          </article>
+          <article class="case" id="intel">
+            <p class="tag">Python · SQL</p>
+            <h3>Arena Intel</h3>
+            <p>
+              3NF SQLite schema, indexed leaderboards, views for form and category skill,
+              REST API with transactional match inserts. Stdlib only.
+            </p>
+            <p class="proof">Proof: <code>career/projects/arena-intel</code></p>
+          </article>
+          <article class="case" id="nexus">
+            <p class="tag">Cisco · Automation</p>
+            <h3>Nexus Campus</h3>
+            <p>
+              800-user three-tier campus: VLANs, OSPF, HSRP, DHCP snooping, DAI, guest ACL.
+              Python auditor fails the build if telnet or missing BPDU Guard appears in IOS configs.
+            </p>
+            <p class="proof">Proof: <code>career/projects/nexus-campus</code></p>
+          </article>
+          <article class="case" id="pulse">
+            <p class="tag">HTML · CSS · JS</p>
+            <h3>This site</h3>
+            <p>
+              Semantic HTML, one visual system, keyboard skip link, reduced-motion,
+              recruiter-length copy. No framework.
+            </p>
+            <p class="proof">Proof: this page’s source.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="stack">
+        <header class="section-head">
+          <h2>Stack, with evidence</h2>
+          <p>If I cannot point at a file, it does not go on LinkedIn.</p>
+        </header>
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Where it lives</th>
+              <th>What to ask me</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Flutter / Dart</td>
+              <td>MindArena</td>
+              <td>How GameStore owns session + persistence</td>
+            </tr>
+            <tr>
+              <td>C++ / algorithms</td>
+              <td>AlgoForge</td>
+              <td>Why LRU is list + hash, not a vector</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Arena Intel, Nexus auditor</td>
+              <td>Transactions vs config parsing</td>
+            </tr>
+            <tr>
+              <td>SQL / data modeling</td>
+              <td>schema.sql + views</td>
+              <td>Why match_answers is a child table</td>
+            </tr>
+            <tr>
+              <td>HTML / CSS</td>
+              <td>This portfolio</td>
+              <td>Information hierarchy for skimming</td>
+            </tr>
+            <tr>
+              <td>Cisco IOS</td>
+              <td>Nexus Campus configs</td>
+              <td>Why HSRP sits on distribution SVIs</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="about" class="about">
+        <header class="section-head">
+          <h2>About</h2>
+        </header>
+        <p>
+          I am Muhammad Faisal Khan, a 3rd-year Computer Science student at Air University,
+          based in Lahore. I am looking for internships and junior software roles — Flutter,
+          Python/SQL backend, or general SWE — remote or relocation.
+        </p>
+        <p>
+          I would rather show a finished arena, a schema, and a failing compliance test
+          than claim a stack I cannot defend. I do not list certifications I have not earned.
+        </p>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Let’s talk</h2>
+        <p>
+          Email <a href="mailto:faisal3537khan@gmail.com">faisal3537khan@gmail.com</a>
+          · Lahore, Pakistan
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Muhammad Faisal Khan · CS student, Air University · Built without a framework.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
