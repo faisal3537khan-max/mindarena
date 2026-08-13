@@ -1,21 +1,25 @@
 # Muhammad Faisal Khan — LinkedIn Profile Kit
 
-Ready to paste. Identity is filled in. Add a GitHub URL when you have one. Do not invent companies, certifications, or user numbers.
+Ready to paste. Identity is filled in. Do not invent companies, certifications, or user numbers.
 
-| Field | Value |
-| --- | --- |
-| Name | Muhammad Faisal Khan |
-| Email | faisal3537khan@gmail.com |
-| Location | Lahore, Pakistan |
-| School | Air University |
-| Degree | Bachelor of Science, Computer Science · 3rd year |
-| Expected graduation | 2027 (change if your intake year is different) |
-| GitHub | Add when you create the repo |
-| LinkedIn URL to set | `linkedin.com/in/muhammad-faisal-khan-swe` |
+
+| Field               | Value                                                       |
+| ------------------- | ----------------------------------------------------------- |
+| Name                | Muhammad Faisal Khan                                        |
+| Email               | [faisal3537khan@gmail.com](mailto:faisal3537khan@gmail.com) |
+| Location            | Lahore, Pakistan                                            |
+| School              | Air University                                              |
+| Degree              | Bachelor of Science, Computer Science · 3rd year            |
+| Expected graduation | 2027 (change if your intake year is different)              |
+| GitHub              | https://github.com/khan0011/mindarena                       |
+| LinkedIn URL to set | `linkedin.com/in/muhammad-faisal-khan-swe`                  |
+
 
 **I cannot log into LinkedIn.** Do not send a password, verification code, or “let me share my account.” Paste the blocks below. That is how professional profiles are built.
 
 ---
+
+
 
 ## 1. Headline — use this one
 
@@ -31,6 +35,8 @@ Muhammad Faisal Khan | Flutter Developer & CS Student | Python · C++ · Databas
 
 ---
 
+
+
 ## 2. Intro / contact (pencil on the top card)
 
 - First name: `Muhammad Faisal`
@@ -41,9 +47,11 @@ Muhammad Faisal Khan | Flutter Developer & CS Student | Python · C++ · Databas
 - Industry: Computer Software
 - Education: Air University
 - Location: Lahore, Punjab, Pakistan
-- Contact email: faisal3537khan@gmail.com
+- Contact email: [faisal3537khan@gmail.com](mailto:faisal3537khan@gmail.com)
 
 ---
+
+
 
 ## 3. About
 
@@ -71,6 +79,8 @@ faisal3537khan@gmail.com · Lahore, Pakistan
 
 ---
 
+
+
 ## 4. Open to work
 
 - Job titles: Software Engineer Intern, Flutter Developer Intern, Mobile Developer Intern, Backend Developer Intern, Junior Software Engineer, Associate Software Engineer, Software Engineer
@@ -80,6 +90,8 @@ faisal3537khan@gmail.com · Lahore, Pakistan
 - Visibility: Public green banner is fine as a student (you want volume)
 
 ---
+
+
 
 ## 5. Featured (order)
 
@@ -94,6 +106,8 @@ Captions:
 - Nexus Campus: `Cisco 3-tier campus + IOS compliance auditor`
 
 ---
+
+
 
 ## 6. Experience
 
@@ -115,6 +129,8 @@ Building a public portfolio while completing a BS in Computer Science at Air Uni
 ```
 
 ---
+
+
 
 ## 7. Education
 
@@ -139,6 +155,8 @@ Description:
 
 ---
 
+
+
 ## 8. Skills — pin the first 3
 
 Pin: **Flutter** · **Python** · **C++**
@@ -149,19 +167,25 @@ Flutter, Dart, Provider, Mobile Application Development, Cross-platform Apps, Py
 
 ---
 
+
+
 ## 9. Licenses
 
 Only add certificates you already hold. Do not add CCNA unless you passed it.
 
 ---
 
+
+
 ## 10. Custom URL + photo + banner
 
 - Public URL: `linkedin.com/in/muhammad-faisal-khan-swe`
 - Photo: head-and-shoulders, plain background, face ~60% of the frame, no group selfie
-- Banner: open `career/portfolio/banner.svg` in Chrome → screenshot 1584×396 → upload as cover
+- Banner: open `career/portfolio/banner.svg` in Chrome → screenshot 1584×396 → ++upload++ as cover
 
 ---
+
+
 
 ## 11. Connection note (under 200 characters)
 
@@ -176,6 +200,8 @@ Hi {Name}, Muhammad Faisal Khan, CS student in Lahore. Flutter + Python/SQL. Ope
 ```
 
 ---
+
+
 
 ## 12. First post (after the profile is live)
 
@@ -194,3 +220,4 @@ I am looking for internships and junior SWE roles — Flutter, backend, or gener
 
 If that is your team, my email is faisal3537khan@gmail.com.
 ```
+
