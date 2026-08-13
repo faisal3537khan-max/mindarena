@@ -34,7 +34,7 @@ flutter run
 Requirements: [Flutter](https://docs.flutter.dev/get-started/install) 3.41+ (Dart 3.11).
 
 ```bash
-git clone https://github.com/khan0011/mindarena.git
+git clone https://github.com/faisal3537khan-max/mindarena.git
 cd mindarena
 flutter pub get
 flutter run

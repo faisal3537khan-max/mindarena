@@ -11,7 +11,7 @@ Ready to paste. Identity is filled in. Do not invent companies, certifications, 
 | School              | Air University                                              |
 | Degree              | Bachelor of Science, Computer Science · 3rd year            |
 | Expected graduation | 2027 (change if your intake year is different)              |
-| GitHub              | https://github.com/khan0011/mindarena                       |
+| GitHub              | https://github.com/faisal3537khan-max/mindarena             |
 | LinkedIn URL to set | `linkedin.com/in/muhammad-faisal-khan-swe`                  |
 
 

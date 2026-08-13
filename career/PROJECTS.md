@@ -2,7 +2,7 @@
 
 Create **five** projects. Associate each with **Air University** (education) or **Independent Developer**. Character limit is 2,000.
 
-Link GitHub: https://github.com/khan0011/mindarena
+Link GitHub: https://github.com/faisal3537khan-max/mindarena
 
 ---
 
