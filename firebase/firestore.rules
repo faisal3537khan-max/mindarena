@@ -1,0 +1,35 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    match /users/{userId} {
+      allow read: if signedIn();
+      allow write: if signedIn() && request.auth.uid == userId
+        && !('bestScore' in request.resource.data
+          && request.resource.data.bestScore > resource.data.bestScore + 25000);
+    }
+
+    match /matches/{matchId} {
+      allow read: if signedIn();
+      allow create: if signedIn()
+        && request.resource.data.playerId == request.auth.uid
+        && request.resource.data.score is int
+        && request.resource.data.score <= 25000
+        && request.resource.data.keys().hasAll(['signature', 'answered', 'correct']);
+      allow update, delete: if false;
+    }
+
+    match /questions/{qid} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /leaderboards/{doc} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

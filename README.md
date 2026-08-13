@@ -1,58 +1,86 @@
 # MindArena
 
-Competitive mini-game platform for Android, iOS, Windows, and web. Built in Flutter.
+**Play for fun. Challenge your brain. Compete with everyone.**
 
-Ten arenas. Multiple live modes. A player economy, seasons, and a design system that looks like a product — not a classroom demo.
+MindArena is a cross-platform competitive mini-game platform built in Flutter. It is a finished product loop — identity, match, results, rank, season — not a quiz list with a score on top.
 
-## Why this exists
+Author: **Muhammad Faisal Khan** · CS student, Air University (Lahore)
 
-Most quiz apps are a list of questions and a score. MindArena is a loop: identity → match → results → rank → season rewards. The store, missions, avatars, and leaderboards exist so progression still matters after the first session.
+## What shipped
 
-## Product surface
-
-| Area | What shipped |
+| Area | Details |
 | --- | --- |
 | Arenas | Brain, Math, Tech, World, Science, Word, Reaction, Memory, Accuracy, Entertainment |
-| Modes | 60s Rush, Practice, Daily, CPU Duel, Weekly, Tournament |
-| Mini-games | Reaction timing, memory grid, accuracy aim |
-| Progression | XP, levels, coins, streaks, streak savers, first-win bonus, weekend events |
-| Seasons | Named season, countdown, reward track |
-| Social | Friends, duels, global / country / university leaderboards |
-| Meta | Shop, avatars, achievements, daily rewards, review notebook, question pipeline |
-| Access | Guest + local email accounts, reduce-motion, color-blind, quality tiers |
+| Modes | 60-second Rush, Practice, Daily, CPU 1v1, Weekly, Tournament |
+| Mini-games | Reaction timing, memory matching, accuracy aim |
+| Progression | XP, levels, coins, daily streak, match win streak, streak savers, first-win bonus, weekend coins |
+| Seasons | Named season, days left, cosmetic reward track |
+| Social | Arena codes, rivals, global / country / university / season / weekly boards |
+| Meta | Shop, avatars, achievements, missions, miss notebook, question pipeline |
+| Access | Guest play, local accounts, reduce-motion, color-assist pads, graphics quality, volume sliders |
 
-## Architecture
+Cosmetics never change questions, timers, or ranks.
 
-```
-lib/
-  app.dart              MaterialApp + Provider boot
-  core/                 theme, palette, shared widgets
-  models/               domain types (profile, match, season, …)
-  data/                 question bank + static catalogs
-  services/
-    game_store.dart     single source of truth + persistence
-    audio_service.dart  music / SFX
-  screens/              one screen per product surface
-```
+## Screenshots
 
-- **State:** `provider` — `GameStore` extends `ChangeNotifier`.
-- **Persistence:** `shared_preferences` JSON snapshots (`mindarena_profile_v1`, accounts, pipeline).
-- **Motion:** `flutter_animate` + `MediaQuery.disableAnimations` when the player requests reduced motion.
-- **Identity:** local registration/login (not a production auth vendor — called out honestly).
-
-## Run
+Run the app and capture Home, Rush, and Results for LinkedIn / GitHub. No stock art is bundled.
 
 ```bash
+flutter run
+```
+
+## Run locally
+
+Requirements: [Flutter](https://docs.flutter.dev/get-started/install) 3.41+ (Dart 3.11).
+
+```bash
+git clone https://github.com/REPLACE_GITHUB_USER/mindarena.git
+cd mindarena
 flutter pub get
 flutter run
 ```
 
-Web:
+Targets: Android (`com.mindarena.mindarena`), Windows, Chrome, iOS (Xcode).
 
 ```bash
 flutter run -d chrome
+flutter test
+flutter analyze
 ```
 
-## LinkedIn one-liner
+Generate sound effects if `assets/sfx/` is empty:
 
-Flutter competitive arena: 10 categories, rush/duel/tournament, seasons, missions, shop, and local persistence — custom design system, Provider, SharedPreferences.
+```bash
+python tool/gen_sfx.py
+```
+
+## Architecture (short)
+
+```
+lib/
+  main.dart                 orientation + system UI
+  app.dart                  Provider boot, reduce-motion, splash
+  core/                     palette, theme, ArenaBackground, pads, avatar
+  models/models.dart        profile, match, shop, missions, review
+  data/                     question bank, math/word generators, catalogs
+  services/game_store.dart  single source of truth + persistence
+  services/audio_service.dart
+  screens/                  one screen per product surface
+```
+
+- **State:** `provider` — `GameStore` is the only store.
+- **Persistence:** `shared_preferences` JSON (`mindarena_profile_v1`, `mindarena_accounts_v1`, `mindarena_pipeline_v1`).
+- **Identity:** local guest / email sessions. Not production Firebase Auth.
+- **Live backend:** `firebase/firestore.rules` is ready; the client still runs fully offline.
+
+Full write-up: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)  
+How to play: [docs/GAMEPLAY.md](docs/GAMEPLAY.md)  
+Career / LinkedIn paste kit: [career/README.md](career/README.md)
+
+## Stack
+
+Flutter, Dart, Provider, SharedPreferences, audioplayers, flutter_animate, confetti, google_fonts, uuid, intl.
+
+## License
+
+MIT — see [LICENSE](LICENSE).

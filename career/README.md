@@ -17,7 +17,7 @@ Paste `LINKEDIN.md` and `PROJECTS.md` yourself.
 | [projects/arena-intel](projects/arena-intel/) | Python + SQLite API |
 | [projects/nexus-campus](projects/nexus-campus/) | Cisco campus + compliance auditor |
 
-MindArena itself is the Flutter project (repo root).
+MindArena itself is the Flutter project (repo root). Product and architecture docs: [docs/GAMEPLAY.md](../docs/GAMEPLAY.md), [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md).
 
 ## Order of operations
 
