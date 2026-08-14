@@ -1,0 +1,22 @@
+name: algoforge
+
+on:
+  push:
+    paths:
+      - "career/projects/algoforge/**"
+      - ".github/workflows/algoforge.yml"
+  pull_request:
+    paths:
+      - "career/projects/algoforge/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and run tests
+        working-directory: career/projects/algoforge
+        run: |
+          mkdir -p build
+          g++ -std=c++17 -Wall -Wextra -Wpedantic -Werror -O2 -I include tests/test_algoforge.cpp -o build/algoforge_test
+          ./build/algoforge_test

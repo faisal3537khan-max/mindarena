@@ -40,17 +40,14 @@ Media: screenshots of home, rush, results, shop.
 **Skills:** C++, Data Structures, Algorithms, Graph Algorithms, Object-Oriented Programming
 
 ```
-AlgoForge is a modern C++17 library of the structures and algorithms used in software interviews and in real systems. I built it to prove CS fundamentals beyond coursework.
+AlgoForge is a finished C++17 header-only library: AVL trees, O(1) LRU, Dijkstra with path reconstruction, and supporting structures (vector, hash map, heap, union-find, trie, Kruskal MST).
 
-It is not a dump of LeetCode files. Each structure has documented complexity and a benchmark binary that times the hot path.
+Trees check their own invariants. Shortest paths are verified against Bellman-Ford. Tests compile with -Werror. Benchmarks report median-of-trials versus std::map and a naive cache.
 
-Includes
-• Sequences & maps: dynamic array, separate-chaining hash map, LRU cache (O(1) get/put).
-• Trees & sets: AVL tree, binary heap, trie, disjoint-set (union by rank + path compression).
-• Graphs: adjacency list, BFS/DFS, Dijkstra, A*, topological sort, Kahn cycle detection.
-• Sorting: merge sort and binary search helpers.
-
-I built this to reason about memory, invariants, and Big-O — not only UI.
+• AVL: insert, erase, lower_bound, inorder; valid() asserts BST order and |balance| <= 1.
+• LRU: hash map + recency list, peek, hit/miss/eviction stats, capacity shrink.
+• Graphs: Dijkstra, bidirectional Dijkstra, A*, Bellman-Ford, Kruskal MST, BFS/DFS/topo.
+• Support: owning Vector, HashMap with rehash, BinaryHeap heapify, Trie erase, heap/merge sort.
 ```
 
 ---
